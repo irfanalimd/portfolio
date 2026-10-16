@@ -159,7 +159,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
 .nav-links a:hover { color: var(--text); }
 .nav-links a.active { color: var(--text); background: var(--bg-2); }
 .nav-links a.active span { color: var(--accent); }
-.nav-actions { display: flex; align-items: center; gap: 8px; }
+.nav-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
 .nav-actions .icon-btn { width: 38px; height: 38px; font-size: 16px; }
 .progress { position: absolute; left: 0; bottom: -1px; height: 1.5px; width: 100%; background: var(--accent); transform-origin: 0 50%; transform: scaleX(var(--p, 0)); }
 .menu-btn { display: none; position: relative; width: 38px; height: 38px; border: 1px solid var(--line-2); border-radius: 999px; background: var(--card); cursor: pointer; }
@@ -306,9 +306,6 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
 .module-flip .module-media { order: 2; }
 .module-media { position: sticky; top: calc(var(--nav-h) + 32px); border-radius: 8px; overflow: hidden; background: #000; }
 .module-media img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
-.sorter-media canvas { display: block; width: 100%; aspect-ratio: 16 / 9; }
-.sorter-hud { position: absolute; top: 12px; right: 12px; padding: 3px 8px; border-radius: 4px; background: rgba(0, 0, 0, .6); color: rgba(255, 255, 255, .6); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; }
-.sorter-hud b { color: #fff; font-weight: 500; font-variant-numeric: tabular-nums; }
 .job + .job { margin-top: 96px; }
 .media-tag { position: absolute; top: 12px; left: 12px; padding: 3px 8px; border-radius: 4px; background: rgba(0, 0, 0, .6); color: #fff; font-size: .62rem; letter-spacing: .12em; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
 .module-sub { margin: 10px 0 20px; color: var(--text-2); font-size: 1.05rem; }
@@ -484,3 +481,10 @@ a.row:hover .row-go { background: var(--accent); color: #fff; transform: rotate(
   .target .c, .target-tag, .target-meta { opacity: 1; transform: none; }
   .target-img img { transform: none; filter: none; }
 }
+
+/* Berkshire Grey product images */
+.bg-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-content: start; }
+.bg-shot { margin: 0; border-radius: 8px; overflow: hidden; aspect-ratio: 1; background: #f1f1ef; }
+.bg-shot img { width: 100%; height: 100%; object-fit: cover; }
+.bg-render img { object-fit: cover; }
+.bg-credit { grid-column: 1 / -1; margin: 2px 0 0; color: var(--text-3); font-size: .6rem; text-transform: uppercase; letter-spacing: .12em; }
